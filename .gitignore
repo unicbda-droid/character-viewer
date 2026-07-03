@@ -1,0 +1,14 @@
+build/
+*.exe
+*.obj
+*.dll
+*.tlog
+*.recipe
+.vs/
+CMakeFiles/
+x64/
+*.user
+*.sln
+*.suo
+.DS_Store
+Thumbs.db
