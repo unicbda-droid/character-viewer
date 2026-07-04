@@ -12,3 +12,13 @@ x64/
 *.suo
 .DS_Store
 Thumbs.db
+*.bmp
+*.png
+imgui.ini
+_conv/
+combined_character.glb
+animated_character.glb
+walk_cycle.glb
+idle_cycle.glb
+body.glb
+clothed_male.glb
