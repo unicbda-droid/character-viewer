@@ -2094,6 +2094,7 @@ int main() {
             char_pos = s.pos;
             char_rot = s.theta + 3.14159f;
             cur_anim = s.anim; anim_dir = 1; anim_time = s.anim_t;
+            update_animation(0);
             update_cloth(0.016f);
             render();
             glfwSwapBuffers(window);
