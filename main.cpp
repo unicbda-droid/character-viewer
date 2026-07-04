@@ -1984,7 +1984,7 @@ static void save_bmp(const char* path, int w, int h, unsigned char* rgb) {
     hdr[26]=1; hdr[28]=24;
     fwrite(hdr,1,54,f);
     // BMP is BGR, bottom-up
-    for (int y=h-1;y>=0;y--) {
+    for (int y=0;y<h;y++) {
         for (int x=0;x<w;x++) {
             unsigned char* p = rgb + (y*w + x)*3;
             unsigned char bgr[3] = {p[2], p[1], p[0]};
