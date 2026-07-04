@@ -8,6 +8,7 @@
 #include <string>
 #include <fstream>
 #include <algorithm>
+#include <direct.h>
 #include <unordered_map>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -2070,16 +2071,40 @@ int main() {
     }
 
     if (screenshot_mode) {
-        update_physics(0);
-        update_cloth(0.016f);
-        render();
-        glfwSwapBuffers(window);
+        // Extract base path (strip .bmp extension if present)
+        char base[256]; strncpy(base, screenshot_path, 255); base[255]=0;
+        char* dot = strrchr(base, '.'); if (dot && !strcmp(dot,".bmp")) *dot=0;
+
+        // Ensure output directory exists
+        char dir[256]; strncpy(dir, base, 255); dir[255]=0;
+        char* slash = strrchr(dir, '\\');
+        if (slash) { *slash = 0; _mkdir(dir); }
+
+        struct { const char* name; float theta, phi, dist; vec3 pos; int anim; float anim_t; } shots[] = {
+            {"front",     0.0f,   0.6f, 5.5f, {0,0,0}, 0, 0},
+            {"left",     -1.57f,  0.6f, 5.5f, {0,0,0}, 0, 0},
+            {"back",      3.14f,  0.6f, 5.5f, {0,0,0}, 0, 0},
+            {"right",     1.57f,  0.6f, 5.5f, {0,0,0}, 0, 0},
+            {"walk_fwd",  0.3f,   0.5f, 6.5f, {2,0,0}, 1, 0.5f},
+            {"walk_side",-0.7f,   0.5f, 6.5f, {3,-1,0},1, 1.2f},
+        };
         int w,h; glfwGetFramebufferSize(window,&w,&h);
-        unsigned char* pixels = (unsigned char*)malloc(w*h*3);
-        glReadBuffer(GL_FRONT);
-        glReadPixels(0,0,w,h,GL_RGB,GL_UNSIGNED_BYTE,pixels);
-        save_bmp(screenshot_path, w, h, pixels);
-        free(pixels);
+        for (auto& s : shots) {
+            cam_theta = s.theta; cam_phi = s.phi; cam_dist = s.dist;
+            char_pos = s.pos;
+            char_rot = s.theta + 3.14159f;
+            cur_anim = s.anim; anim_dir = 1; anim_time = s.anim_t;
+            update_cloth(0.016f);
+            render();
+            glfwSwapBuffers(window);
+            unsigned char* pixels = (unsigned char*)malloc(w*h*3);
+            glReadBuffer(GL_FRONT);
+            glReadPixels(0,0,w,h,GL_RGB,GL_UNSIGNED_BYTE,pixels);
+            char path[300]; snprintf(path,300,"%s_%s.bmp",base,s.name);
+            save_bmp(path, w, h, pixels);
+            free(pixels);
+            fprintf(stderr,"  saved %s\n", path);
+        }
         glfwTerminate();
         return 0;
     }

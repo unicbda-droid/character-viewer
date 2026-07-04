@@ -47,7 +47,7 @@ Built as part of a custom C++ OpenGL game engine (engine static library in `../e
   UV wireframe overlay
 - **Animation controls** — play/pause, time slider, animation selector
 - **Bone viewer** — skeleton hierarchy with selected bone highlight
-- **Screenshot** — `--screenshot <path>` flag renders one frame and saves as BMP
+- **Screenshot** — `--screenshot <path>` flag renders 6 frames (4 idle angles + 2 walk poses) and saves as BMP
 
 ## Controls
 
@@ -99,7 +99,7 @@ cd build\character\Release
 character.exe
 ```
 
-Optional: `--screenshot <path.bmp>` to render one frame to a BMP file and exit.
+Optional: `--screenshot <path.bmp>` to render 6 frames (4 idle camera angles + 2 walk poses) to BMP files (`<path>_front.bmp`, `_left.bmp`, `_back.bmp`, `_right.bmp`, `_walk_fwd.bmp`, `_walk_side.bmp`) and exit.
 
 ## Pipeline
 
@@ -126,19 +126,32 @@ For automation:
 - **Hair:** afro01, bob01-02, braid01, long01, ponytail01, short01-04
 - **Skins:** 18 variations (young/middleage/old × african/asian/caucasian × male/female)
 
+## Screenshots
+
+| Front | Left | Back | Right |
+|-------|------|------|-------|
+| ![front](screenshots/shot_front.png) | ![left](screenshots/shot_left.png) | ![back](screenshots/shot_back.png) | ![right](screenshots/shot_right.png) |
+
+| Walk Forward | Walk Side |
+|--------------|-----------|
+| ![walk forward](screenshots/shot_walk_fwd.png) | ![walk side](screenshots/shot_walk_side.png) |
+
+*Screenshots captured using the `--screenshot` flag in headless mode.*
+
 ## Project Structure
 
 ```
 character/
-├── main.cpp                   # Complete viewer (~2200 lines)
+├── main.cpp                   # Complete viewer (~2300 lines)
 ├── CMakeLists.txt             # CMake build (links engine + imgui)
 ├── cgltf.h                    # glTF 2.0 loader (single header, 260 KB)
 ├── stb_image.h                # Image decoder for embedded textures
 ├── stb_truetype.h             # Font renderer for editor UI
 ├── imgui_impl_opengl3.cpp     # ImGui OpenGL3 backend
 ├── imgui_impl_opengl3.h       # ImGui OpenGL3 backend header
-├── run_speed.glb              # Test model (MakeHuman run animation, 16 MB)
+├── animated_character.glb     # Character with merged idle + walk animations
 ├── skybox/                    # Daylight cubemap textures
+├── screenshots/               # Generated screenshots
 └── *.anim                     # Saved keyframe animation files
 ```
 

@@ -13,7 +13,6 @@ x64/
 .DS_Store
 Thumbs.db
 *.bmp
-*.png
 imgui.ini
 _conv/
 combined_character.glb
