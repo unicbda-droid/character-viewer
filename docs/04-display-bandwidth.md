@@ -155,6 +155,9 @@ STORAGE: NVMe SSD (5,000+ MB/s)
          Fuer Texture-Streaming noetig
 
 DISPLAY: DisplayPort 2.1 (80 Gbps)
+         USB-C (80 Gbps)
+         HDMI 2.1 (48 Gbps)
+         Glasfaser-Option fuer 8K@120Hz+
          Kein HDMI-Limit
 
 THERMAL: Wasserkuehlung
