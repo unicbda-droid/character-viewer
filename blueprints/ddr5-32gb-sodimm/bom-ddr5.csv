@@ -1,0 +1,11 @@
+name,quantity,unit_cost,supplier,description
+Samsung 16GB DDR5 Die (B-Die),2,4.00,samsung,"16GB DDR5-5600 DRAM Chip"
+PMIC TPS53819,1,1.20,digikey,"Power Management IC for DDR5"
+SPD Hub ST504LP,1,0.60,digikey,"Serial Presence Detect Hub"
+PCB 8-Layer SO-DIMM,1,2.50,jlcpcb,"1.0mm ENIG, 262-pin"
+0201 Resistor Array 100K,12,0.01,digikey,"Pull-up/pull-down resistors"
+0201 MLCC 100nF,20,0.01,digikey,"Decoupling capacitors"
+Aluminum Heatspreader,1,1.00,bykski,"Anodized aluminum, thermal pad"
+Assembly SMT,1,2.00,jlcpcb,"SMT placement + soldering"
+Testing (MemTest),1,0.50,in-house,"4h MemTest86 validation"
+Packaging Anti-Static,1,0.50,alibaba,"ESD bag + label + manual"

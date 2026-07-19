@@ -1,0 +1,13 @@
+name,quantity,unit_cost,supplier,description
+Tenstorrent Blackhole p150a,1,150.00,tenstorrent,"RISC-V GPU, 128 RISC-V cores"
+GDDR6 4GB (Micron),8,10.00,mouser,"4GB GDDR6-21000 VRAM Chip"
+VRM DrMOS (ISL69260),1,18.00,digikey,"Voltage regulator module"
+PCB 12-Layer HDI,1,45.00,jlcpcb,"ENIG, impedance controlled"
+DP 2.1 Connector (full-size),2,3.00,mouser,"DisplayPort 2.1 UHBR20"
+HDMI 2.1 Connector,1,2.00,mouser,"HDMI 2.1 Type A"
+USB-C Connector (DP Alt),1,1.50,mouser,"USB Type-C with DP Alt"
+0201/0402 Passives Kit,1,8.00,digikey,"Resistors, capacitors, inductors"
+Heatsink Base (CNC Aluminum),1,12.00,bykski,"Thermal interface baseplate"
+Thermal Pads (3mm),4,0.50,alibaba,"12W/mK thermal pads"
+Assembly + Testing,1,15.00,jlcpcb,"SMT + functional test"
+Packaging,1,4.00,alibaba,"Anti-static box + manual"

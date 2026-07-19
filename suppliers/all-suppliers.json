@@ -1,0 +1,444 @@
+{
+  "suppliers": [
+    {
+      "id": "ddr5-shenzhen-kedun",
+      "name": "Shenzhen Kedun Technology Co., Ltd.",
+      "location": "Shenzhen, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "oem",
+      "products": ["ddr5-sodimm", "ddr5-dimm", "ddr5-udimm"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial"],
+      "moq": 2,
+      "pricing": {
+        "ddr5-32gb-5600": 11.33,
+        "ddr5-16gb-5600": 6.50,
+        "ddr5-8gb-4800": 4.20
+      },
+      "currency": "USD",
+      "lead_time_days": 14,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://keduntech.en.alibaba.com",
+        "email": "sales@keduntech.com"
+      },
+      "notes": "No MOQ, wholesale pricing, Samsung/Hynix chips"
+    },
+    {
+      "id": "ddr5-shanghai-apying",
+      "name": "Shanghai Apying Electronic Co., Ltd.",
+      "location": "Shanghai, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "oem",
+      "products": ["ddr5-sodimm", "ddr5-dimm", "ddr4-sodimm"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer"],
+      "moq": 2,
+      "pricing": {
+        "ddr5-32gb-5600": 10.00,
+        "ddr5-16gb-5600": 5.80,
+        "ddr5-8gb-4800": 3.50
+      },
+      "currency": "USD",
+      "lead_time_days": 14,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://apying.en.alibaba.com"
+      },
+      "notes": "Competitive pricing, fast delivery"
+    },
+    {
+      "id": "ddr5-meilan",
+      "name": "Shenzhen Meilan Electronics Co., Ltd.",
+      "location": "Shenzhen, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "oem",
+      "products": ["ddr5-sodimm", "ddr5-dimm"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer"],
+      "moq": 1,
+      "pricing": {
+        "ddr5-32gb-5600": 13.00,
+        "ddr5-16gb-5600": 7.20,
+        "ddr5-8gb-4800": 4.00
+      },
+      "currency": "USD",
+      "lead_time_days": 10,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://meilan.en.alibaba.com"
+      },
+      "notes": "No MOQ, accepts small orders"
+    },
+    {
+      "id": "ddr5-digiera",
+      "name": "Digiera Memory Technology",
+      "location": "Shenzhen, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "odm",
+      "products": ["ddr5-sodimm", "ddr5-dimm", "custom-modules"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial"],
+      "moq": 100,
+      "pricing": {
+        "ddr5-32gb-5600": 10.50,
+        "ddr5-16gb-5600": 6.00,
+        "ddr5-8gb-4800": 3.80
+      },
+      "currency": "USD",
+      "lead_time_days": 21,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://digiera.com",
+        "email": "info@digiera.com"
+      },
+      "notes": "OEM/ODM, custom XMP, private label, 400-600k modules/month"
+    },
+    {
+      "id": "ddr5-nexaram",
+      "name": "NexaRAM Technologies",
+      "location": "Shenzhen, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "odm",
+      "products": ["ddr5-sodimm", "ddr5-dimm", "custom-rgb", "custom-heatspreader"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial"],
+      "moq": 100,
+      "pricing": {
+        "ddr5-32gb-5600": 11.50,
+        "ddr5-16gb-5600": 6.80,
+        "ddr5-8gb-4800": 4.10
+      },
+      "currency": "USD",
+      "lead_time_days": 25,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://nexaram.com",
+        "email": "sales@nexaram.com"
+      },
+      "notes": "OEM/ODM, 180 engineers, custom XMP, RGB, private label"
+    },
+    {
+      "id": "ddr5-innodisk",
+      "name": "Innodisk Corporation",
+      "location": "Taipei, Taiwan",
+      "country": "TW",
+      "region": "asia",
+      "type": "industrial",
+      "products": ["ddr5-sodimm", "ddr5-dimm", "ddr5-edimm"],
+      "licenses": ["proprietary"],
+      "quality": ["industrial", "automotive"],
+      "moq": 50,
+      "pricing": {
+        "ddr5-32gb-5600": 18.00,
+        "ddr5-16gb-5600": 11.00,
+        "ddr5-8gb-4800": 7.50
+      },
+      "currency": "USD",
+      "lead_time_days": 30,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://www.innodisk.com",
+        "email": "info@innodisk.com"
+      },
+      "notes": "Industrial grade, -40C to +85C, anti-sulfuration"
+    },
+    {
+      "id": "ddr5-apacer",
+      "name": "Apacer Technology Inc.",
+      "location": "Taipei, Taiwan",
+      "country": "TW",
+      "region": "asia",
+      "type": "industrial",
+      "products": ["ddr5-sodimm", "ddr5-dimm", "ddr5-edimm"],
+      "licenses": ["proprietary"],
+      "quality": ["industrial"],
+      "moq": 50,
+      "pricing": {
+        "ddr5-32gb-5600": 16.00,
+        "ddr5-16gb-5600": 10.00,
+        "ddr5-8gb-4800": 6.50
+      },
+      "currency": "USD",
+      "lead_time_days": 28,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://www.apacer.com",
+        "email": "info@apacer.com"
+      },
+      "notes": "Industrial grade, original DRAM ICs, ECC support"
+    },
+    {
+      "id": "ddr5-kingston",
+      "name": "Kingston Technology",
+      "location": "Fountain Valley, USA",
+      "country": "US",
+      "region": "global",
+      "type": "brand",
+      "products": ["ddr5-sodimm", "ddr5-dimm", "fury-beast", "fury-reno"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer"],
+      "moq": 1000,
+      "pricing": {
+        "ddr5-32gb-5600": 20.00,
+        "ddr5-16gb-5600": 12.00,
+        "ddr5-8gb-4800": 8.00
+      },
+      "currency": "USD",
+      "lead_time_days": 14,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://www.kingston.com",
+        "email": "info@kingston.com"
+      },
+      "notes": "Major brand, wholesale only, high MOQ"
+    },
+    {
+      "id": "pcb-jlcpcb",
+      "name": "JLCPCB (JLC Electronic Co., Ltd.)",
+      "location": "Shenzhen, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "pcb-fab",
+      "products": ["pcb", "pcba", "smt-assembly", "stencil", "3d-print"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial"],
+      "moq": 2,
+      "pricing": {
+        "pcb-4layer-100x100": 2.00,
+        "pcb-8layer-100x100": 10.00,
+        "pcb-12layer-100x100": 30.00,
+        "smt-assembly": 0.0015,
+        "stencil": 7.00,
+        "pcba-setup": 5.00
+      },
+      "currency": "USD",
+      "lead_time_days": 3,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://jlcpcb.com",
+        "email": "service@jlcpcb.com"
+      },
+      "notes": "Best value, fast turnaround, online instant quote, 680k+ components"
+    },
+    {
+      "id": "pcb-pcbway",
+      "name": "PCBWay",
+      "location": "Shenzhen, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "pcb-fab",
+      "products": ["pcb", "pcba", "smt-assembly", "flex-pcb", "metal-core"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial", "automotive"],
+      "moq": 1,
+      "pricing": {
+        "pcb-4layer-100x100": 5.00,
+        "pcb-8layer-100x100": 15.00,
+        "pcb-12layer-100x100": 40.00,
+        "smt-assembly": 0.002,
+        "pcba-setup": 8.00
+      },
+      "currency": "USD",
+      "lead_time_days": 3,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://pcbway.com",
+        "email": "info@pcbway.com"
+      },
+      "notes": "Flexible, flex-PCB, metal-core, DFM check"
+    },
+    {
+      "id": "pcb-nextpcb",
+      "name": "NextPCB",
+      "location": "Shenzhen, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "pcb-fab",
+      "products": ["pcb", "pcba", "smt-assembly", "bom-sourcing"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial"],
+      "moq": 1,
+      "pricing": {
+        "pcb-4layer-100x100": 5.00,
+        "pcb-8layer-100x100": 18.00,
+        "pcb-12layer-100x100": 45.00,
+        "smt-assembly": 0.002,
+        "pcba-setup": 10.00
+      },
+      "currency": "USD",
+      "lead_time_days": 5,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://nextpcb.com",
+        "email": "info@nextpcb.com"
+      },
+      "notes": "Full turnkey, BOM sourcing included"
+    },
+    {
+      "id": "pcb-eurocircuits",
+      "name": "Eurocircuits",
+      "location": "Eindhoven, Netherlands",
+      "country": "NL",
+      "region": "europe",
+      "type": "pcb-fab",
+      "products": ["pcb", "pcba", "smt-assembly"],
+      "licenses": ["proprietary"],
+      "quality": ["industrial"],
+      "moq": 1,
+      "pricing": {
+        "pcb-4layer-100x100": 25.00,
+        "pcb-8layer-100x100": 80.00,
+        "pcb-12layer-100x100": 200.00,
+        "smt-assembly": 0.005,
+        "pcba-setup": 25.00
+      },
+      "currency": "EUR",
+      "lead_time_days": 7,
+      "shipping": "europe",
+      "contact": {
+        "website": "https://www.eurocircuits.com",
+        "email": "info@eurocircuits.com"
+      },
+      "notes": "EU quality, IPC-A-610 Class 2/3, no China dependency"
+    },
+    {
+      "id": "pcb-protolabs",
+      "name": "Protolabs",
+      "location": "Maple Plain, USA",
+      "country": "US",
+      "region": "global",
+      "type": "pcb-fab",
+      "products": ["pcb", "pcba", "injection-molding", "cnc"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial"],
+      "moq": 1,
+      "pricing": {
+        "pcb-4layer-100x100": 30.00,
+        "pcb-8layer-100x100": 100.00,
+        "pcb-12layer-100x100": 250.00,
+        "smt-assembly": 0.008,
+        "pcba-setup": 50.00
+      },
+      "currency": "USD",
+      "lead_time_days": 1,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://www.protolabs.com",
+        "email": "info@protolabs.com"
+      },
+      "notes": "Rapid prototype, same-day possible, expensive"
+    },
+    {
+      "id": "cooling-bykski",
+      "name": "Bykski",
+      "location": "Shenzhen, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "cooling",
+      "products": ["waterblock-gpu", "waterblock-cpu", "radiator", "pump", "fitting", "quick-connect"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer"],
+      "moq": 1,
+      "pricing": {
+        "gpu-waterblock": 35.00,
+        "cpu-waterblock": 25.00,
+        "radiator-240mm": 20.00,
+        "pump-d5": 30.00,
+        "quick-connect-pair": 12.00,
+        "fitting-g14": 3.00
+      },
+      "currency": "USD",
+      "lead_time_days": 7,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://www.bykski.com",
+        "email": "info@bykski.com"
+      },
+      "notes": "Good quality, affordable, wide range"
+    },
+    {
+      "id": "cooling-alphacool",
+      "name": "Alphacool International GmbH",
+      "location": "Aurich, Germany",
+      "country": "DE",
+      "region": "europe",
+      "type": "cooling",
+      "products": ["waterblock-gpu", "waterblock-cpu", "radiator", "pump", "fitting", "quick-connect"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial"],
+      "moq": 1,
+      "pricing": {
+        "gpu-waterblock": 80.00,
+        "cpu-waterblock": 60.00,
+        "radiator-240mm": 50.00,
+        "pump-d5": 70.00,
+        "quick-connect-pair": 25.00,
+        "fitting-g14": 5.00
+      },
+      "currency": "EUR",
+      "lead_time_days": 5,
+      "shipping": "europe",
+      "contact": {
+        "website": "https://www.alphacool.com",
+        "email": "info@alphacool.com"
+      },
+      "notes": "EU made, high quality, Eisbaer quick-connect system"
+    },
+    {
+      "id": "cooling-barrow",
+      "name": "Barrow (XSPC)",
+      "location": "Guangzhou, China",
+      "country": "CN",
+      "region": "asia",
+      "type": "cooling",
+      "products": ["waterblock-gpu", "waterblock-cpu", "fitting", "quick-connect"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer"],
+      "moq": 1,
+      "pricing": {
+        "gpu-waterblock": 30.00,
+        "cpu-waterblock": 20.00,
+        "fitting-g14": 2.00,
+        "quick-connect-pair": 10.00
+      },
+      "currency": "USD",
+      "lead_time_days": 10,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://www.barrowint.com"
+      },
+      "notes": "Budget friendly, good quality"
+    },
+    {
+      "id": "cable-startech",
+      "name": "StarTech.com",
+      "location": "Lockbourne, USA",
+      "country": "US",
+      "region": "global",
+      "type": "cable",
+      "products": ["dp-cable", "hdmi-cable", "usb-c-cable"],
+      "licenses": ["proprietary"],
+      "quality": ["consumer", "industrial"],
+      "moq": 1,
+      "pricing": {
+        "dp21-cable-1m": 15.00,
+        "dp21-cable-2m": 20.00,
+        "hdmi21-cable-2m": 8.00,
+        "usb4-cable-1m": 10.00
+      },
+      "currency": "USD",
+      "lead_time_days": 3,
+      "shipping": "worldwide",
+      "contact": {
+        "website": "https://www.startech.com"
+      },
+      "notes": "VESA certified, good quality"
+    }
+  ]
+}
