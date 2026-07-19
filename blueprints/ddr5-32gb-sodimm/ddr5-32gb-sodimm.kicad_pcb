@@ -103,18 +103,12 @@
   )
   (net 0 "")
 
-  ;; ============================================================
-  ;; BOARD OUTLINE (69.6mm x 30mm, JEDEC SO-DIMM)
-  ;; ============================================================
   (gr_rect (start 0 0) (end 69.6 30)
     (stroke (width 0.1) (type default))
     (fill none)
     (layer "Edge.Cuts")
   )
 
-  ;; ============================================================
-  ;; SILKSCREEN - Board Label
-  ;; ============================================================
   (gr_text "DDR5 32GB 5600MHz" (at 34.8 3 0)
     (layer "F.SilkS")
     (effects (font (size 1.2 1.2) (thickness 0.15)))
@@ -128,21 +122,13 @@
     (effects (font (size 0.8 0.8) (thickness 0.10)))
   )
 
-  ;; ============================================================
-  ;; PIN 1 MARKER
-  ;; ============================================================
   (gr_circle (center 2 2) (end 2.8 2)
     (stroke (width 0.15) (type default))
     (fill solid)
     (layer "F.SilkS")
   )
 
-  ;; ============================================================
-  ;; DRAM CHIPS (4x Samsung 16GB DDR5 B-Die)
-  ;; Package: FBGA-262 (9.5mm x 11.5mm)
-  ;; ============================================================
 
-  ;; U1: DRAM 1 (Top-Left)
   (footprint "DRAM_16GB_DDR5:FBGA-262_9.5x11.5mm"
     (layer "F.Cu")
     (uuid "dram-0001")
@@ -156,16 +142,13 @@
     (property "Footprint" "DRAM_16GB_DDR5:FBGA-262" (at 8 7 0) (layer "F.Fab")
       (effects (font (size 0.6 0.6) (thickness 0.08)) (hide yes))
     )
-    ;; Chip outline
     (fp_line (start -4.75 -5.75) (end 4.75 -5.75) (stroke (width 0.15) (type default)) (layer "F.CrtYd"))
     (fp_line (start 4.75 -5.75) (end 4.75 5.75) (stroke (width 0.15) (type default)) (layer "F.CrtYd"))
     (fp_line (start 4.75 5.75) (end -4.75 5.75) (stroke (width 0.15) (type default)) (layer "F.CrtYd"))
     (fp_line (start -4.75 5.75) (end -4.75 -5.75) (stroke (width 0.15) (type default)) (layer "F.CrtYd"))
-    ;; Pin 1 marker
     (fp_circle (center -4 -5) (end -3.5 -5) (stroke (width 0.1) (type default)) (fill solid) (layer "F.SilkS"))
   )
 
-  ;; U2: DRAM 2 (Top-Left-Bottom)
   (footprint "DRAM_16GB_DDR5:FBGA-262_9.5x11.5mm"
     (layer "F.Cu")
     (uuid "dram-0002")
@@ -183,7 +166,6 @@
     (fp_circle (center -4 -5) (end -3.5 -5) (stroke (width 0.1) (type default)) (fill solid) (layer "F.SilkS"))
   )
 
-  ;; U3: DRAM 3 (Top-Right)
   (footprint "DRAM_16GB_DDR5:FBGA-262_9.5x11.5mm"
     (layer "F.Cu")
     (uuid "dram-0003")
@@ -201,7 +183,6 @@
     (fp_circle (center -4 -5) (end -3.5 -5) (stroke (width 0.1) (type default)) (fill solid) (layer "F.SilkS"))
   )
 
-  ;; U4: DRAM 4 (Top-Right-Bottom)
   (footprint "DRAM_16GB_DDR5:FBGA-262_9.5x11.5mm"
     (layer "F.Cu")
     (uuid "dram-0004")
@@ -219,10 +200,6 @@
     (fp_circle (center -4 -5) (end -3.5 -5) (stroke (width 0.1) (type default)) (fill solid) (layer "F.SilkS"))
   )
 
-  ;; ============================================================
-  ;; PMIC - Power Management IC (TPS53819)
-  ;; Package: QFN-20 (4mm x 4mm)
-  ;; ============================================================
   (footprint "PMIC:QFN-20_4x4mm"
     (layer "F.Cu")
     (uuid "pmic-0001")
@@ -240,10 +217,6 @@
     (fp_circle (center -1.5 -1.5) (end -1.2 -1.5) (stroke (width 0.08) (type default)) (fill solid) (layer "F.SilkS"))
   )
 
-  ;; ============================================================
-  ;; SPD HUB (ST504LP)
-  ;; Package: TSSOP-8 (3mm x 3mm)
-  ;; ============================================================
   (footprint "SPD:TSSOP-8_3x3mm"
     (layer "F.Cu")
     (uuid "spd-0001")
@@ -261,12 +234,7 @@
     (fp_circle (center -1 -1) (end -0.8 -1) (stroke (width 0.06) (type default)) (fill solid) (layer "F.SilkS"))
   )
 
-  ;; ============================================================
-  ;; DECOUPLING CAPACITORS (20x 0201 MLCC 100nF)
-  ;; Placed near each IC power pin
-  ;; ============================================================
 
-  ;; C1-C4: Near DRAM U1
   (footprint "Capacitor_SMD:C_0201_0603Metric"
     (layer "F.Cu") (uuid "cap-0001") (at 3 5 0)
     (property "Reference" "C1" (at 3 4 0) (layer "F.SilkS") (effects (font (size 0.5 0.5) (thickness 0.06))))
@@ -288,7 +256,6 @@
     (property "Value" "100nF" (at 5 10 0) (layer "F.Fab") (effects (font (size 0.4 0.4) (thickness 0.05))))
   )
 
-  ;; C5-C8: Near DRAM U2
   (footprint "Capacitor_SMD:C_0201_0603Metric"
     (layer "F.Cu") (uuid "cap-0005") (at 3 17 0)
     (property "Reference" "C5" (at 3 16 0) (layer "F.SilkS") (effects (font (size 0.5 0.5) (thickness 0.06))))
@@ -310,7 +277,6 @@
     (property "Value" "100nF" (at 5 22 0) (layer "F.Fab") (effects (font (size 0.4 0.4) (thickness 0.05))))
   )
 
-  ;; C9-C12: Near DRAM U3
   (footprint "Capacitor_SMD:C_0201_0603Metric"
     (layer "F.Cu") (uuid "cap-0009") (at 53 5 0)
     (property "Reference" "C9" (at 53 4 0) (layer "F.SilkS") (effects (font (size 0.5 0.5) (thickness 0.06))))
@@ -332,7 +298,6 @@
     (property "Value" "100nF" (at 55 10 0) (layer "F.Fab") (effects (font (size 0.4 0.4) (thickness 0.05))))
   )
 
-  ;; C13-C16: Near DRAM U4
   (footprint "Capacitor_SMD:C_0201_0603Metric"
     (layer "F.Cu") (uuid "cap-0013") (at 53 17 0)
     (property "Reference" "C13" (at 53 16 0) (layer "F.SilkS") (effects (font (size 0.5 0.5) (thickness 0.06))))
@@ -354,7 +319,6 @@
     (property "Value" "100nF" (at 55 22 0) (layer "F.Fab") (effects (font (size 0.4 0.4) (thickness 0.05))))
   )
 
-  ;; C17-C20: Near PMIC
   (footprint "Capacitor_SMD:C_0201_0603Metric"
     (layer "F.Cu") (uuid "cap-0017") (at 27 6 0)
     (property "Reference" "C17" (at 27 5 0) (layer "F.SilkS") (effects (font (size 0.5 0.5) (thickness 0.06))))
@@ -376,9 +340,6 @@
     (property "Value" "100nF" (at 33 11 0) (layer "F.Fab") (effects (font (size 0.4 0.4) (thickness 0.05))))
   )
 
-  ;; ============================================================
-  ;; RESISTOR ARRAYS (12x 0201)
-  ;; ============================================================
   (footprint "Resistor_SMD:R_0201_0603Metric"
     (layer "F.Cu") (uuid "res-0001") (at 20 4 0)
     (property "Reference" "R1" (at 20 3 0) (layer "F.SilkS") (effects (font (size 0.4 0.4) (thickness 0.05))))
@@ -440,9 +401,6 @@
     (property "Value" "10K" (at 40 15 0) (layer "F.Fab") (effects (font (size 0.3 0.3) (thickness 0.04))))
   )
 
-  ;; ============================================================
-  ;; TEST POINTS (8x, Bottom layer, edge)
-  ;; ============================================================
   (footprint "TestPoint:TestPoint_Pad_1.3x1.3mm"
     (layer "B.Cu")
     (uuid "tp-0001")
@@ -500,16 +458,8 @@
     (property "Value" "SCL" (at 45 27.5 0) (layer "B.Fab") (effects (font (size 0.4 0.4) (thickness 0.05))))
   )
 
-  ;; ============================================================
-  ;; SO-DIMM EDGE CONNECTOR (262 pins, bottom edge)
-  ;; Pin pitch: 0.5mm, Pin length: 7.0mm
-  ;; ============================================================
 
-  ;; Pin 1 (Leftmost, bottom edge)
-  ;; Full connector is 69.6mm wide, 262 pins at 0.5mm pitch
-  ;; Pins go from y=30 down to y=23 (7mm pin length)
 
-  ;; Left row (pins 1-131)
   (footprint "Connector:SO-DIMM_262pin"
     (layer "F.Cu")
     (uuid "conn-0001")
@@ -520,18 +470,13 @@
     (property "Value" "SO-DIMM 262-pin DDR5" (at 34.8 23.5 0) (layer "F.Fab")
       (effects (font (size 0.6 0.6) (thickness 0.08)))
     )
-    ;; Connector outline
     (fp_line (start 0 -7) (end 69.6 -7) (stroke (width 0.2) (type default)) (layer "F.CrtYd"))
     (fp_line (start 0 0) (end 69.6 0) (stroke (width 0.2) (type default)) (layer "F.CrtYd"))
     (fp_line (start 0 -7) (end 0 0) (stroke (width 0.2) (type default)) (layer "F.CrtYd"))
     (fp_line (start 69.6 -7) (end 69.6 0) (stroke (width 0.2) (type default)) (layer "F.CrtYd"))
-    ;; Notch (key slot) at pin 80-81
     (fp_line (start 39.5 0) (end 40.5 0) (stroke (width 0.3) (type default)) (layer "Edge.Cuts"))
   )
 
-  ;; ============================================================
-  ;; HEATSPREADER MOUNTING HOLES (2x, M2.5)
-  ;; ============================================================
   (footprint "MountingHole:MountingHole_2.7mm_M2.5"
     (layer "F.Cu")
     (uuid "mount-0001")

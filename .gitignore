@@ -1,0 +1,5 @@
+.history/
+*.kicad_pcb.lck
+*.kicad_sch.lck
+*.kicad_pro.lck
+fp-info-cache
