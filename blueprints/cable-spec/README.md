@@ -21,6 +21,15 @@ GLASFASER = SAUBERSTES BILD:
   - Ideal fuer: 4K@240Hz, 8K@60Hz+, VR-Headsets
   - Nachteil: Teurer, Stecker empfindlicher
 
+WICHTIG: Glasfaser-Kabel brauchen KEIN neues Geraet!
+  Die Elektronik sitzt im Kabel-Stecker:
+    [USB-C/DP/HDMI Stecker] → [Laser + Treiber] → Glasfaser
+    [Glasfaser] → [Photodiode + Empfaenger] → [USB-C/DP/HDMI Stecker]
+  
+  = Gleiche Stecker wie Kupfer
+  = Einfach Kupfer-Kabel durch Glasfaser ersetzen
+  = Kein Adapter, kein neues Geraet
+
 KUPFER = STANDARD:
   - Gut fuer kurze Distanzen (<1m)
   - Billiger
