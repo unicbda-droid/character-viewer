@@ -7,7 +7,7 @@ SoC:           Tenstorrent Blackhole p150a ($1,399)
                ODER AMD RDNA3 APU (Custom, ~$120 OEM)
 RAM:           DDR5 SO-DIMM (32GB, upgradebar)
 Storage:       M.2 NVMe (2TB)
-Ausgabe:       2x DisplayPort 2.1, 1x HDMI 2.1, 1x USB-C
+Ausgabe:       2x DisplayPort 2.1 (80 Gbps), 2x USB-C (80 Gbps), 2x HDMI 2.1 (48 Gbps)
 I/O:           USB3, Ethernet 2.5G, WiFi 6E, BT 5.3
 Power:         12V DC Input (150W max)
 Kuehlung:      Quick-Connect Wasserkuehlung

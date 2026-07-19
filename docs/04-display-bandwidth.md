@@ -27,9 +27,52 @@ AUFLUESE / REFRESH-RATE / BENOETIGTE BANDBREITE:
   @120Hz 4:4:4 10-bit:  288 Gbps  (DP 2.1 mit DSC, zukunftssicher)
 
 BANDBREITE VERGLEICH:
-  HDMI 2.1:    48 Gbps  → 4K@120Hz max (4:2:0)
-  DP 2.1:      80 Gbps  → 4K@144Hz (4:4:4)
-  DP 2.1 UHBR20: 80 Gbps → 8K@60Hz mit DSC
+  HDMI 2.1:              48 Gbps  → 4K@120Hz max (4:2:0)
+  HDMI 2.2 (neu):        96 Gbps  → knapp unter 8K@120Hz!
+  USB4 v1 (USB-C):       40 Gbps  → knapp unter HDMI 2.1
+  USB4 v2 (USB-C):       80 Gbps  → 67% SCHNELLER als HDMI 2.1!
+  DP 2.1 (USB-C Alt):    80 Gbps  → DP Signal ueber USB-C Stecker
+  DP 2.1 (full-size):    80 Gbps  → 4K@144Hz (4:4:4)
+  DP 2.1 UHBR20:         80 Gbps  → 8K@60Hz mit DSC
+
+MATHEMATISCH BENOETIGT FUER 8K@120Hz:
+  7680 × 4320 × 120 × 10 × 3 = ~119 Gbps (roh)
+  Mit Encoding: ~100 Gbps
+
+  HDMI 2.1:   48 Gbps  → 52 Gbps zu wenig!
+  HDMI 2.2:   96 Gbps  → reicht mit DSC (Display Stream Compression)!
+  DP 2.1:     80 Gbps  → reicht mit DSC (4:4:4)
+  USB4 v2:    80 Gbps  → reicht mit DSC (4:4:4)
+
+  DSC (Display Stream Compression):
+    - 3:1 Kompression (119 Gbps → ~40 Gbps)
+    - "Visuell verlustfrei" (laut VESA)
+    - Trotzdem Kompression!
+    - HDMI 2.2 nutzt DSC fuer 8K@120Hz
+    - DP 2.1 nutzt DSC fuer 8K@60Hz+
+    
+  OHNE DSC (native, unkomprimiert):
+    - HDMI 2.2 (96 Gbps): NICHT genug fuer 8K@120Hz
+    - DP 2.1 (80 Gbps): NICHT genug fuer 8K@120Hz
+    - USB4 v2 (80 Gbps): NICHT genug fuer 8K@120Hz
+    - Erst 120+ Gbps schaffen 8K@120Hz native
+
+ACHTUNG: Sogar HDMI 2.2 (96 Gbps) reicht NICHT fuer
+         8K@120Hz 4:4:4 10-bit ohne DSC!
+         Nur DP 2.1 und USB4 v2 schaffen das mit DSC.
+
+MULTI-CONNECTOR STRATEGIE:
+  Board hat ALLE Anschluesse: 2x DP 2.1, 2x USB-C, 1x HDMI
+  Fuer jedes Display gibt es eine Verbindung:
+    Monitor mit DP:       DP direkt (80 Gbps)
+    Monitor mit USB-C:    USB-C direkt (80 Gbps)
+    TV mit HDMI:          HDMI direkt (48 Gbps) ODER Adapter
+    VR-Headset:           USB-C direkt (80 Gbps)
+    Alter Monitor:        Adapter DP→VGA/DVI ($5-10)
+  
+  ADAPTER: DP→HDMI ($10-15), USB-C→HDMI ($15-20)
+  Der Adapter limitiert auf die langsamste Verbindung,
+  aber man KANN immer anschliessen.
 ```
 
 ## GTA6 Europa Display-Ausgabe
@@ -37,8 +80,14 @@ BANDBREITE VERGLEICH:
 ```
 SPECIFICATIONS:
   2x DisplayPort 2.1 (UHBR20, 80 Gbps)
-  1x HDMI 2.1 (48 Gbps, fuer TV-Kompatibilitaet)
-  1x USB-C (DP Alt Mode, 40 Gbps)
+  2x USB-C (USB4 v2 + DP Alt Mode, 80 Gbps)
+  2x HDMI 2.1 (48 Gbps) ← 2x fuer Dual-TV oder Monitor+TV
+
+WARUM 2x HDMI?
+  - Dual-TV Setup (z.B. Gaming + Streaming)
+  - Monitor + TV gleichzeitig
+  - Viele TVs haben NUR HDMI
+  - Adapter DP→HDMI moeglich, aber 2x HDMI direkt ist bequemer
 
 SUPPORTED MODES:
   4K@60Hz    4:4:4 10-bit   ← Native, kein DSC

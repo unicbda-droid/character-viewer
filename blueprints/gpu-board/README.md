@@ -6,8 +6,8 @@
 GPU:           Tenstorrent Blackhole p150a (oder AMD RDNA3 APU)
 VRAM:          32 GB GDDR6/6X (8x 4GB)
 Ausgabe:       2x DisplayPort 2.1 (80 Gbps)
-               1x HDMI 2.1 (48 Gbps)
-               1x USB-C (DP Alt Mode)
+               2x USB-C (USB4 v2, 80 Gbps)
+               2x HDMI 2.1 (48 Gbps, 2x fuer Dual-TV)
 Kuehlung:      Quick-Connect Waterblock mount
 Leistung:      120-150W TDP
 Interface:     PCIe 5.0 x16
